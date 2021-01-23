@@ -1,0 +1,17 @@
+$bg: #eff1f5;
+$fbg: #262b30;
+$cbg: #192027;
+$btn: #0674ec;
+$text: #555555;
+$green: #009688;
+$item: #3c6490;
+$grey: #bfcad7;
+
+@mixin f500 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+@mixin f700 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+}

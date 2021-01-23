@@ -1,0 +1,310 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+.header {
+	&__top {
+		background-color: #eef1f3;
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100px;
+		}
+	}
+	&__logo{
+		margin-left: 8px;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		.seller {
+			font-size: 14px;
+			line-height: 28px;
+			@include f500;
+			color: #fff;
+			background-color: $btn;
+			padding: 6px 19px;
+			border-radius: 25px;
+		}
+	}
+	&__circle{
+		span{
+			font-size: 14px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			color: #fff;
+			position: absolute;
+			text-align: center;
+		}
+	}
+	.notification{
+		position: relative;
+		&__box{
+			margin-left: 50px;
+			// cursor: pointer;
+		}
+		span{
+			background-color: #ff6a6c;
+			top: -32px;
+			left: -14px;
+		}
+	}
+	.message{
+		position: relative;
+		&__box{
+			margin-left: 33px;
+			// cursor: pointer;
+		}
+		span{
+			background-color: #62d03b;
+			top: -32px;
+			left: -11px;
+		}
+	}
+	.basket{
+		position: relative;
+		&__box{
+			margin-left: 33px;
+			// cursor: pointer;
+		}
+		span{
+			background-color: $btn;
+			top: -32px;
+			left: -9px;
+		}
+	}
+}
+
+.user {
+	
+	&__box{
+		max-width: 175px;
+		width: 100%;
+		@include f500;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 45px;
+		align-items: center;
+	}
+
+	&__info{
+		margin-left: 20px;
+	}
+	&__name {
+		font-size: 16px;
+		line-height: 22px;
+		@include f500;
+		color: #333333;
+	}
+	&__money {
+		font-size: 15px;
+		line-height: 22px;
+		color: $btn;
+		line-height: 26px;
+	}
+}
+
+.header__bottom {
+	background-color: #fff;
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		height: 82px;
+		align-items: center;
+	}
+	.menu {
+		&__list {
+			display: flex;
+			li {
+				display: inline-block;
+				& + li{
+					margin-left: 30px;
+				}
+				a {
+					font-size: 15px;
+					text-transform: uppercase;
+					color: #333333;
+				}
+			}
+		}
+	}
+}
+.lnr{
+	cursor: pointer;
+}
+.lnr-alarm,
+.lnr-cart,
+.lnr-envelope {
+	color: #7e8fa1;
+	font-size: 20px;
+}
+.lnr-magnifier{
+	font-size: 15px;
+	color: #fff;
+	right: 0;
+	position: absolute;
+	z-index: 1;
+	right: 26px;
+	top: 17px;
+}
+
+.search {
+	form{
+		position: relative;
+	}
+	input{
+    padding: 15px 84px 15px 25px;
+    border-radius: 30px;
+    width: 360px;
+    border: none;
+    border: 1px solid #d9dfe5;
+		outline: none;
+		
+	}
+
+	button{
+		background-color: $btn;
+		height: 49px;
+		width: 70px;
+		border: none;
+		border-radius: 25px;
+		outline: none;
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+	}
+	&::placeholder {
+		font-size: 15px;
+		color: #898f96;
+		line-height: 30px;
+		@include f500;
+	}
+}
+
+
+
+
+
+
+//footer
+
+.footer{
+	font-size: 15px;
+	line-height: 27px;
+	color: #ababab;
+	a{
+		color: #ababab;
+	}
+	&__content{
+	background-color: $fbg;
+	padding: 130px 0 45px;
+	}
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__col-title{
+		color: #fff;
+		font-size: 18px;
+		@include f500;
+		margin-bottom: 30px;
+	}
+	&__col-logo{
+		margin-bottom: 20px;
+		margin-top: -11px;
+	}
+	&__col-text{
+		margin-bottom: 16px;
+	}
+	&__col-phone{
+		margin-bottom: 8px;
+	}
+	&__col-email{
+		margin-bottom: 8px;
+	}
+	&__form{
+		position: relative;
+		input{
+			height: 50px;
+			background-color: #fff;
+			border: none;
+			border-radius: 25px;
+			padding: 17px 122px 17px 30px;
+			max-width: 363px;
+			width: 100%;
+			outline: none;
+			
+			&::placeholder{
+				font-size: 15px;
+				color: #ababab;
+			}
+		}
+		button{
+			position: absolute;
+			background-color: $btn;
+			height: 50px;
+			border-radius: 25px;
+			width: 113px;
+			border: none;
+			outline: none;
+			top: 0;
+			right: 0;
+			font-size: 15px;
+			color: #fff;
+		}
+	}
+	&__social-link{
+		li{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: red;
+			display: inline-block;
+		}
+	}
+}
+.footer__col-newsletter .footer__col-text{
+	margin-bottom: 28px;
+}
+.footer__col{
+	&-contacts{
+	width: 270px;
+	}
+	&-about{
+		width: 150px;
+	}
+	&-support{
+		width: 150px;
+	}
+	&-newsletter{
+		width: 370px;
+	}
+	&-list li{
+		margin-bottom: 4px;
+	}
+} 
+.footer__copy{
+	height: 90px;
+	background-color: $cbg;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	color: #999;
+	letter-spacing: -0.5px;
+	&-link{
+		color: #fff;
+	}
+}
+.footer__col-phone,
+.footer__col-email,
+.footer__col-adress{
+	position: relative;
+	padding-left: 30px;
+	
+	
+}
+
+@import 'media';
