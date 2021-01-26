@@ -6,6 +6,7 @@
 .header {
 	&__top {
 		background-color: #eef1f3;
+
 		&-inner {
 			display: flex;
 			justify-content: space-between;
@@ -13,12 +14,15 @@
 			height: 100px;
 		}
 	}
-	&__logo{
+
+	&__logo {
 		margin-left: 8px;
 	}
+
 	&__box {
 		display: flex;
 		align-items: center;
+
 		.seller {
 			font-size: 14px;
 			line-height: 28px;
@@ -29,8 +33,9 @@
 			border-radius: 25px;
 		}
 	}
-	&__circle{
-		span{
+
+	&__circle {
+		span {
 			font-size: 14px;
 			width: 20px;
 			height: 20px;
@@ -40,37 +45,46 @@
 			text-align: center;
 		}
 	}
-	.notification{
+
+	.notification {
 		position: relative;
-		&__box{
+
+		&__box {
 			margin-left: 50px;
 			// cursor: pointer;
 		}
-		span{
+
+		span {
 			background-color: #ff6a6c;
 			top: -32px;
 			left: -14px;
 		}
 	}
-	.message{
+
+	.message {
 		position: relative;
-		&__box{
+
+		&__box {
 			margin-left: 33px;
 			// cursor: pointer;
 		}
-		span{
+
+		span {
 			background-color: #62d03b;
 			top: -32px;
 			left: -11px;
 		}
 	}
-	.basket{
+
+	.basket {
 		position: relative;
-		&__box{
+
+		&__box {
 			margin-left: 33px;
 			// cursor: pointer;
 		}
-		span{
+
+		span {
 			background-color: $btn;
 			top: -32px;
 			left: -9px;
@@ -79,8 +93,8 @@
 }
 
 .user {
-	
-	&__box{
+
+	&__box {
 		max-width: 175px;
 		width: 100%;
 		@include f500;
@@ -90,15 +104,17 @@
 		align-items: center;
 	}
 
-	&__info{
+	&__info {
 		margin-left: 20px;
 	}
+
 	&__name {
 		font-size: 16px;
 		line-height: 22px;
 		@include f500;
 		color: #333333;
 	}
+
 	&__money {
 		font-size: 15px;
 		line-height: 22px;
@@ -109,20 +125,25 @@
 
 .header__bottom {
 	background-color: #fff;
+
 	&-inner {
 		display: flex;
 		justify-content: space-between;
 		height: 82px;
 		align-items: center;
 	}
+
 	.menu {
 		&__list {
 			display: flex;
+
 			li {
 				display: inline-block;
-				& + li{
+
+				&+li {
 					margin-left: 30px;
 				}
+
 				a {
 					font-size: 15px;
 					text-transform: uppercase;
@@ -132,16 +153,19 @@
 		}
 	}
 }
-.lnr{
+
+.lnr {
 	cursor: pointer;
 }
+
 .lnr-alarm,
 .lnr-cart,
 .lnr-envelope {
 	color: #7e8fa1;
 	font-size: 20px;
 }
-.lnr-magnifier{
+
+.lnr-magnifier {
 	font-size: 15px;
 	color: #fff;
 	right: 0;
@@ -152,20 +176,21 @@
 }
 
 .search {
-	form{
+	form {
 		position: relative;
 	}
-	input{
-    padding: 15px 84px 15px 25px;
-    border-radius: 30px;
-    width: 360px;
-    border: none;
-    border: 1px solid #d9dfe5;
+
+	input {
+		padding: 15px 84px 15px 25px;
+		border-radius: 30px;
+		width: 360px;
+		border: none;
+		border: 1px solid #d9dfe5;
 		outline: none;
-		
+
 	}
 
-	button{
+	button {
 		background-color: $btn;
 		height: 49px;
 		width: 70px;
@@ -176,6 +201,7 @@
 		right: 0;
 		cursor: pointer;
 	}
+
 	&::placeholder {
 		font-size: 15px;
 		color: #898f96;
@@ -191,43 +217,53 @@
 
 //footer
 
-.footer{
+.footer {
 	font-size: 15px;
 	line-height: 27px;
 	color: #ababab;
-	a{
+
+	a {
 		color: #ababab;
 	}
-	&__content{
-	background-color: $fbg;
-	padding: 130px 0 45px;
+
+	&__content {
+		background-color: $fbg;
+		padding: 130px 0 94px;
 	}
-	&__inner{
+
+	&__inner {
 		display: flex;
 		justify-content: space-between;
 	}
-	&__col-title{
+
+	&__col-title {
 		color: #fff;
 		font-size: 18px;
 		@include f500;
 		margin-bottom: 30px;
 	}
-	&__col-logo{
+
+	&__col-logo {
 		margin-bottom: 20px;
 		margin-top: -11px;
 	}
-	&__col-text{
+
+	&__col-text {
 		margin-bottom: 16px;
 	}
-	&__col-phone{
+
+	&__col-phone {
 		margin-bottom: 8px;
 	}
-	&__col-email{
+
+	&__col-email {
 		margin-bottom: 8px;
 	}
-	&__form{
+
+	&__form {
 		position: relative;
-		input{
+
+		input {
 			height: 50px;
 			background-color: #fff;
 			border: none;
@@ -236,13 +272,14 @@
 			max-width: 363px;
 			width: 100%;
 			outline: none;
-			
-			&::placeholder{
+
+			&::placeholder {
 				font-size: 15px;
 				color: #ababab;
 			}
 		}
-		button{
+
+		button {
 			position: absolute;
 			background-color: $btn;
 			height: 50px;
@@ -256,37 +293,62 @@
 			color: #fff;
 		}
 	}
-	&__social-link{
-		li{
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			background-color: red;
-			display: inline-block;
-		}
-	}
+
 }
-.footer__col-newsletter .footer__col-text{
+
+.footer__col-newsletter .footer__col-text {
 	margin-bottom: 28px;
 }
-.footer__col{
-	&-contacts{
-	width: 270px;
+
+.footer__col {
+	&-contacts {
+		width: 270px;
 	}
-	&-about{
+
+	&-about {
 		width: 150px;
 	}
-	&-support{
+
+	&-support {
 		width: 150px;
 	}
-	&-newsletter{
+
+	&-newsletter {
 		width: 370px;
 	}
-	&-list li{
+
+	&-list li {
 		margin-bottom: 4px;
 	}
-} 
-.footer__copy{
+
+	.lnr {
+		color: #fff;
+	}
+}
+
+.footer__col-phone {
+	.lnr.lnr-phone-handset {
+		margin-top: 6px;
+		margin-right: 16px;
+	}
+}
+
+.footer__col-email {
+	.lnr.lnr-envelope {
+		margin-top: 2px;
+		margin-right: 12px;
+	}
+}
+
+.footer__col-adress {
+	.lnr.lnr-map-marker {
+		margin-top: 18px;
+		margin-right: 17px;
+		cursor: auto;
+	}
+}
+
+.footer__copy {
 	height: 90px;
 	background-color: $cbg;
 	text-align: center;
@@ -294,17 +356,179 @@
 	align-items: center;
 	color: #999;
 	letter-spacing: -0.5px;
-	&-link{
+
+	&-text &-link {
 		color: #fff;
 	}
 }
+
 .footer__col-phone,
 .footer__col-email,
-.footer__col-adress{
+.footer__col-adress {
 	position: relative;
-	padding-left: 30px;
-	
-	
+	display: flex;
 }
+
+
+
+.footer__form {
+	margin-bottom: 48px;
+}
+
+.footer {
+	&__social-link {
+		padding-bottom: 20px;
+		li{
+			display: inline-block;
+			& + li{
+				margin-left: 10px;
+			}
+		}
+		a{
+			width: 42px; 
+			height: 42px;
+			border-radius: 50%;
+			background-image: url(../images/css_sprites.png);
+		}
+	}
+}
+.link-facebook {
+	background: url('css_sprites.png') -42px -0;
+}
+.link-twitter {
+	background: url('css_sprites.png') -84px -42px;
+}
+.link-google {
+	background: url('css_sprites.png') -0 -42px;
+}
+.link-pinterest {
+	background: url('css_sprites.png') -84px -0;
+}
+.link-linkedin {
+	background: url('css_sprites.png') -42px -42px;
+}
+//////////////////////////////////////////
+//ниже сделал через icomoon---->
+
+// .footer__social-link{
+// 	li{
+// 		display: inline-block;
+// 		width: 42px;
+// 		height: 42px;
+// 		border-radius: 50%;
+// 		background-color: yellow;
+// 		& + li{
+// 			margin-left: 10px;
+// 		}
+// 	}
+// }
+
+// .footer__social-link li {
+// 	position: relative;
+// 	display: inline-block;
+// 	& + li {
+// 		margin-left: 10px;
+// 	}
+// 	a {
+// 		width: 42px;
+// 		height: 42px;
+// 		border-radius: 50%;
+// 		&::before {
+// 			position: absolute;
+// 			font-family: 'icomoon';
+// 			font-size: 16px;
+// 			font-weight: 500;
+// 			color: #fff;
+// 		}
+// 	}
+// }
+// .link-facebook {
+// 	background-color: #395799;
+// 	&::before {
+// 		content: "\f09a";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+// .link-twitter {
+// 	background-color: #19b2f5;
+// 	&::before {
+// 		content: "\f099";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+// .link-google {
+// 	background-color: #f05b44;
+// 	&::before {
+// 		content: "\f1a0";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+// .link-pinterest {
+// 	background-color: #9c0c1c;
+// 	&::before {
+// 		content: "\f0d2";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+// .link-linkedin {
+// 	background-color: #0da6be;
+// 	&::before {
+// 		content: "\f0e1";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+// .link-dribbble {
+// 	background-color: #ea4c89;
+// 	&::before {
+// 		content: "\f17d";
+// 		left: 15px;
+// 		top: 7px;
+// 	}
+// }
+
+//више сделал через icomoon---->
+
+//ниже через вставку классов icomoon в HTML
+// .footer__social-link{
+// 	li{
+// 		display: inline-block;
+// 		& + li{
+// 			margin-left: 10px;
+// 		}
+// 	}
+// 	a{
+// 		width: 42px;
+// 		height: 42px;
+// 		border-radius: 50%;
+// 		position: relative;
+// 		&::before{
+// 			position: absolute;
+// 			top: 13px;
+// 			left: 15px;
+// 			font-size: 16px;
+// 		}
+// 	}
+// }
+// .link-facebook{
+// 	background-color: red;
+// }
+// .link-twitter{
+// 	background-color: yellow;
+// }
+// .link-google{
+// 	background-color: green;
+// }
+//више через вставку классов icomoon в HTML
+
+
+
+
+
+
 
 @import 'media';
