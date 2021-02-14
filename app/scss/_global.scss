@@ -76,4 +76,16 @@ body {
 		line-height: 30px;
 	}
 }
-
+.breadcrumbs{
+	&__inner{
+	 padding: 0 0 20px;
+	}
+	&__list{
+	 li{
+		display: inline-block;
+		& + li{
+		 padding-left: 22px;
+		}
+	 }
+	}
+ }
