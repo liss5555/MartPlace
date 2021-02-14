@@ -8,14 +8,20 @@ $(function(){
 	// 	readOnly: true,
 	// 	normalFill: "#f1f3f6"
 	// });
-  $(".rate-star").rateYo({
+ 
+  $(".ratst.rate-star").rateYo({
 			rating: 5,
-			starWidth: "17px",
+			starWidth: "14px",
 			normalFill: "#faefe0",
 			fullStar: true,
   });
 
-
+	$(".rate-star").rateYo({
+		rating: 5,
+		starWidth: "17px",
+		normalFill: "#faefe0",
+		fullStar: true,
+});
 
 
 	$(".popular__items").slick({
@@ -26,6 +32,17 @@ $(function(){
 		nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
 
 	});
+
+	$(".followers__inner").slick({
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		prevArrow: '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
+		nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+
+	});
+	
+	new WOW().init();
 
 	// $(".js-range-slider").ionRangeSlider({
 	// 	type: "double",

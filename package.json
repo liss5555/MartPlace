@@ -11,6 +11,7 @@
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "@rateyo/jquery": "^3.0.0-alpha.2",
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -25,6 +26,7 @@
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "rateyo": "^2.3.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

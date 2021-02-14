@@ -26,8 +26,11 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	color: $text;
-	overflow-x: hidden;
 	background-color: #fff;
+	// то что ниже стандартно писать:
+	overflow-x: hidden; // при включенном не работает анимация mixitup// НО, если виключить ,то на мобильном появится scroll--> поєтому добавляю к overflow-x: hidden; --> см ниже: position: relative; + min-width: 320px;(так пишут разработчики чтоби избежать проблем)
+	position: relative;
+	min-width: 320px;
 }
 
 .wrapper {
@@ -58,3 +61,19 @@ body {
   font-size: 24px;
 	text-align: center;
 }
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 30px 40px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	margin-bottom: 50px;
+	.title{
+		font-size: 30px;
+		color: #000;
+		line-height: 30px;
+	}
+}
+
