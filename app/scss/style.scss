@@ -1465,6 +1465,35 @@
 	}
 }
 //error fin
+//conditions start
+.conditions{
+	background-color: #eff1f5;
+	padding: 60px 0 120px;
+	&__main{
+		background-color: #fff;
+		padding: 40px 0 30px 0;
+		border-radius: 4px;
+		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	}
+	&__title{
+		font-size: 24px;
+		font-weight: 500;
+		color: #000;
+		margin-bottom: 28px;
+		padding-right: 40px;
+		padding-left: 30px;
 
+	}
+	&__text{
+		padding-right: 40px;
+		padding-left: 30px;
+		padding-top: 24px;
+		margin-bottom: 46px;
+		border-top: 1px solid #eff1f5;
+		line-height: 30px;
+		color: $text;
+	}
+}
+//conditions end 
 
 @import 'media';
