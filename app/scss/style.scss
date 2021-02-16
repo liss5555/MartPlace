@@ -1611,7 +1611,7 @@
 	&__lost a{
 		color: $btn;
 	}
-	&__acc{
+	&__acc a{
 		color: $btn;
 	}
 	&__btn{
@@ -1632,7 +1632,27 @@
 }
 //login end
 
-
+//recover start
+.recover{
+	&__top{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	&__text{
+	text-align: left;
+	font-size: 16px;
+	line-height: 30px;
+	}
+	&__btn{
+		text-align: center;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	&__box{
+		padding-bottom: 16px;
+	}
+}
+//recover end
 
 
 
