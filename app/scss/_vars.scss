@@ -7,6 +7,10 @@ $green: #009688;
 $item: #3c6490;
 $grey: #bfcad7;
 
+@mixin f400 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
 @mixin f500 {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 500;

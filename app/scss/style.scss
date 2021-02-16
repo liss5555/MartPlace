@@ -1541,6 +1541,96 @@
 }
 
 //tutorial end
+//login start
+.login{
+	background-color: #eff1f5;
+	padding: 70px 0 120px;
+	&__box{
+		padding: 60px 0;
+		background-color: #fff;
+		max-width: 555px;
+		margin: 0 auto;
+		text-align: center;
+		border-radius: 4px;
+		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+			
+		
+	}
+	&__top{
+		border-bottom: 1px solid #eff1f5;
+	}
+	&__title{
+		font-size: 26px;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	&__text{
+		margin-bottom: 26px;
+	}
+	&__form{
+		padding: 30px 50px 0 50px;
+		text-align: left;
+		label{
+			color: #000;
+			font-weight: 500;
+		}
+		.check-wrap{
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 25px;
+			.check{
+				position: absolute;
+				left: 0;
+				top: -1px;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+			}
+		}
+		.data{
+			margin-top: 12px;
+			margin-bottom: 28px;
+			height: 50px;
+			width: 100%;
+			background-color: #eff1f5;
+			border: none;
+			padding: 0 20px;
+			outline: none;
+			::placeholder{
+				color: #898f96;
+			}
+		}
+	}
+	&__recover{
+		font-size: 16px;
+		color: #898f96;
+		font-weight: 500;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__lost a{
+		color: $btn;
+	}
+	&__acc{
+		color: $btn;
+	}
+	&__btn{
+		width: 192px;
+		padding: 15px 55px;
+		background-color: $btn;
+		border-radius: 30px;
+		color: #fff;
+		border: 1px solid transparent;
+		margin-bottom: 40px;
+		&:hover{
+			background-color: #eff1f5;
+			color: $btn;
+			transition: all .3s;
+			border: 1px solid $btn;
+		}
+	}
+}
+//login end
 
 
 
