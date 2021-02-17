@@ -1677,16 +1677,23 @@
 
 	&__top {
 		border-bottom: 1px solid #eff1f5;
+		padding-left: 55px;
+		padding-right: 55px;
 	}
 
 	&__title {
 		font-size: 26px;
 		color: #000;
 		margin-bottom: 20px;
+		font-weight: 500;
 	}
 
 	&__text {
 		margin-bottom: 26px;
+		font-size: 16px;
+		line-height: 28px;
+		color: #555;
+		font-weight: 500;
 	}
 
 	&__form {
@@ -1747,12 +1754,13 @@
 
 	&__btn {
 		width: 192px;
-		padding: 15px 55px;
+		padding: 15px 35px;
 		background-color: $btn;
 		border-radius: 30px;
 		color: #fff;
 		border: 1px solid transparent;
 		margin-bottom: 40px;
+		text-align: center;
 
 		&:hover {
 			background-color: #eff1f5;
