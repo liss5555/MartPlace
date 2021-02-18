@@ -1864,7 +1864,7 @@
 		margin-bottom: 27px;
 	}
 
-	&__item-link {}
+
 
 	&__item-adress {
 		font-size: 16px;
@@ -1893,8 +1893,6 @@
 		font-weight: 500;
 		
 	}
-
-	&__message-form {}
 
 	&__message-container {
 		max-width: 770px;
@@ -2064,4 +2062,137 @@
 }
 
 //pricing end
+//filter start
+.filter{
+	background-color: #fff;
+	&__inner{
+		min-height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+	&__title {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 500;
+		color: #000;
+	}
+
+	&__by {
+		border-left: 1px solid #eceff2;
+		border-right: 1px solid #eceff2;
+		line-height: 100px;
+		padding-left: 30px;
+		padding-right: 30px;
+		.lnr.lnr-chevron-down{
+			font-size: 10px;
+			font-weight: 700;
+			color: $text;
+			padding-left: 8px;
+		}
+	}
+
+	&__price,
+	&__items {
+		padding: 14px 18px;
+		border: 1px solid #eceff2;
+		border-radius: 4px;
+		.lnr.lnr-chevron-down{
+			font-size: 10px;
+			font-weight: 700;
+			color: $text;
+			padding-left: 53px;
+			
+		}
+	}
+
+	&__switch {
+		padding: 12px 18px;
+		border: 1px solid #eceff2;
+		border-radius: 4px;
+		img{
+			cursor: pointer;
+		}
+	}
+	
+
+
+}
+
+//filter end
+//favorites start
+.favorites{
+	background-color: #eff1f5;
+	padding: 70px 0 110px;
+	&__inner{
+		margin-bottom: 35px;
+		
+	}
+}
+//favorites end
+//pagination start
+.pagination{
+	text-align: center;
+}
+.pagination__list{
+	li{
+		display: inline-block;
+		
+		& + li{
+			margin-left: 2px;
+		}
+	}
+	li:first-child{
+		margin-right: 12px;
+	}
+	li:last-child{
+		margin-left: 12px;
+	}
+	a,
+	span{
+		width: 49px;
+		height: 36px;
+		border-radius: 18px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 500;
+		color: #747b86;
+		
+		&.current{
+			background-color: $btn;
+			color: #ffffff;
+		}
+	
+	}
+	.button.active {
+		span{
+		 color: #fff;
+		 background-color: #7347c1;
+		}
+	}
+	.button {
+		span{
+		 color: #000;
+		 font-weight: 500;
+		 font-size: 16px;
+		}
+	}
+}
+
+// .pagination__list .button a{
+// 	background-color:red;
+// 	z-index: 5;
+		// background-color: #7347c1;
+		// color: #ffffff;
+// }
+//pagination
+
+
+
+
+
 @import 'media';
