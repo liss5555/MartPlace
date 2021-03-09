@@ -16,6 +16,7 @@ $(function(){
 			fullStar: true,
   });
 
+
 	$(".rate-star").rateYo({
 		rating: 5,
 		starWidth: "17px",
